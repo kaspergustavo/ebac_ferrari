@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferrari</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bona+Nova&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="navbar navbar-expand-lg sticky-top p-1" id="cabecalho">
+        <div class="container">
+            <a class="navbar-brand m-0 me-4" href="#"><img src="images/logo.svg" alt="logo da ferrari"></a>
+            <h1 class="navbar-brand m-0 section-title ms-2 fs-3">FERRARI</h1>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="collapse navbar-collapse justify-content-end mt-2" id="menu-navegacao">
+                <ul class="nav nav-pills d-block d-md-flex">
+                    <li class="nav-item fw-bold">
+                        <a href="#sobre-a-ferrari" class="section-title nav-link fs-5">
+                            SOBRE A FERRARI
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#carros" class="section-title nav-link fs-5">
+                            CARROS
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#fale-conosco" class="section-title nav-link fs-5">
+                            FALE CONOSCO
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho" data-bs-smooth-scroll="true">
+        <section id="sobre-a-ferrari">
+            <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="images/carousel/carousel1.avif" alt="Logo da Ferrari">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="images/carousel/carousel2.avif" alt="Carro da Ferrari">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="images/carousel/carousel3.avif" alt="Loja da Ferrari">
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                        <div class="carousel-control-prev-icon"></div>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                        <div class="carousel-control-next-icon"></div>
+                    </button>
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carousel" class="active" data-bs-slide-to="0"></button>
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-md-5 text-center text-md-start">
+                        <img src="images/about/about.avif" alt="Imagem sobre a Ferrari" class="img-fluid rounded">
+                    </div>
+                    <div class="col-md-7 mt-3 mt-md-0">
+                        <h2 class="section-title text-center fs-2">Sobre a <span class="text-colored">Ferrari</span></h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint harum quas sed fuga nam blanditiis sequi maiores repellat ab ipsam nisi odit laudantium consequatur vel labore, ea iste! Minima, hic?
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, est officiis nihil itaque accusamus sapiente obcaecati quas maxime adipisci, unde voluptates commodi nam nulla dolorem, perspiciatis laborum repellat beatae. Dolorum.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="carros">
+            <div class="container">
+                <div class="row">
+                    <h2 class="mb-4 section-title text-center fs-2 pb-2 pt-2">Carros</h2>
+                </div>
+                <div class="row">
+                    <aside class="col-md-3">
+                        <nav class="nav nav-pills flex-column nav-carros">
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#f1" class="section-title nav-link text-start active">Ferrari Daytona</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#f2" class="section-title nav-link text-start">Ferrari Roma</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#f3" class="section-title nav-link text-start">Ferrari SF90 Stradale</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#f4" class="section-title nav-link text-start">Ferrari Purosange</button>
+                        </nav>
+                    </aside>
+                    <div class="col-md-9">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="f1">
+                                <div class="row">
+                                    <h5 class="text-center section-title fs-3"><span class="text-colored">Ferrari</span> Daytona SP3</h5>
+                                    <p class="text-center">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </p>
+                                    <img class="mb-5 mt-5 img-fluid rounded" src="images/cars/ferrari1.avif" alt="Ferrari Daytona SP3">
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="f2">
+                                <div class="row">
+                                    <h5 class="text-center section-title fs-3"><span class="text-colored">Ferrari</span> Roma</h5>
+                                    <p class="text-center">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </p>
+                                    <img class="mb-5 mt-5 img-fluid rounded" src="images/cars/ferrari2.avif" alt="Ferrari Roma">
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="f3">
+                                <div class="row">
+                                    <h5 class="text-center section-title fs-3"><span class="text-colored">Ferrari</span> SF90 Stradale</h5>
+                                    <p class="text-center">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </p>
+                                    <img class="mb-5 mt-5 img-fluid rounded" src="images/cars/ferrari3.avif" alt="Ferrari SF90 Stradale">
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="f4">
+                                <div class="row">
+                                    <h5 class="text-center section-title fs-3"><span class="text-colored">Ferrari</span> Purosange</h5>
+                                    <p class="text-center">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </p>
+                                    <img class="mb-5 mt-5 img-fluid rounded" src="images/cars/ferrari4.avif" alt="Ferrari Purosangue">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="fale-conosco" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center fs-2">Fale conosco</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-7">
+                        <form>
+                            <div class="mb-3">
+                                <label for="nome" class="form-label">Seu nome:</label>
+                                <input type="text" id="nome" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Seu e-mail:</label>
+                                <input type="email" id="email" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefone" class="form-label">Seu telefone:</label>
+                                <input type="tel" id="telefone" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensagem" class="form-label">Sua mensagem:</label>
+                                <textarea id="mensagem" class="form-control" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-danger mb-5">Enviar</button>
+                        </form>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="row">
+                            <h3 class="section-title">
+                                Redes sociais
+                            </h3>
+                            <ul class="social-links">
+                                <li class="fs-5">  
+                                    <a href="#">
+                                        <i class="bi bi-instagram"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5 ms-1 me-1">
+                                    <a href="#">
+                                        <i class="bi bi-facebook"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi bi-linkedin"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row mt-4">
+                            <h3 class="section-title">
+                                Endereço
+                            </h3>
+                            <p>
+                                Av. dos Sonhos, 2024 - Venha Realizar, Seu Sonho - SS - Brasil
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer class="text-center">
+        <p>&copy; Feito por - Gustavo Kasper - 2024</p>
+        <a href="https://github.com/gustavokasper"><img src="images/social/icone-github.png" class=social-icob"></a>
+        <a href="https://www.linkedin.com/in/gustavo-kasper-4287402b9/"><img src="images/social/icone-linkedin.png" class="social-icon"></a>
+    </footer>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/messages_pt_BR.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
